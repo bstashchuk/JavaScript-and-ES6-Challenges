@@ -8,7 +8,11 @@ Use ES6 whenever possible.
 
 "use strict";
 
-// Write code here
+function sum(...args) {
+  var total;
+  total = args.reduce((acc, elem) => acc + elem, 0);
+  console.log(total);
+}
 
 sum(1, 3);
 //4
