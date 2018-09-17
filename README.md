@@ -1,12 +1,14 @@
 # JavaScript-and-ES6-Challenges
 
-Each Challenge has two branches **start** and **finl**.
+Each Challenge has two branches **start** and **finish**.
 
 In order to start with specific challenge checkout corresponding **start** branch like
+
 `git checkout CHALLENGE-1/sum-numbers/start`
 
-Solution for each challenge is available in the **final** branches like
-`git checkout CHALLENGE-1/sum-numbers/final`
+Solution for each challenge is available in the **finish** branches like
+
+`git checkout CHALLENGE-1/sum-numbers/finish`
 
 - Challenge 1 - Sum numbers
 - Challenge 2 - Const
