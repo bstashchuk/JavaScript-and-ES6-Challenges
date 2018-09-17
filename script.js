@@ -1,23 +1,15 @@
-/* CHALLENGE 15 - Iterate over String
+/* CHALLENGE 16 - Swap values of the two variables
 
-Count number of the lowercase vowel letters in the string.
-Vowel letters - a, e, i, o, u
+Swap values of the a and b.
+Don't use for this any new variable.
 */
 
 "use strict";
 
-var vowelsCount = 0;
-var vowels = ["a", "e", "i", "o", "u"];
+var a = "first";
+var b = "second";
 
-var str = "Today is best day of my life";
+// Write code here
 
-// for (let i = 0; i < str.length; i++) {
-//   if (vowels.includes(str[i])) vowelsCount++;
-// }
-
-for (let s of str) {
-  if (vowels.includes(s)) vowelsCount++; // ES2016 (ES7) syntax
-}
-
-console.log(vowelsCount);
-// 8
+console.log(a, b);
+// second first
