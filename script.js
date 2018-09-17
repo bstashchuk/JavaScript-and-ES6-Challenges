@@ -10,7 +10,7 @@ var a, b, c;
 
 var arr = [1, 2, 3, 4, 5, 6, 7];
 
-// Write code here
+[a, b, ...c] = arr;
 
 console.log(a);
 // 1
