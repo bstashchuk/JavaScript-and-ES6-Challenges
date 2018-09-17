@@ -1,27 +1,21 @@
-/* CHALLENGE 7 - Default parameters
+/* CHALLENGE 8 - Check presence of the function parameters
 
-Answer following question:
-1. Why on the line 14 we can't simply use following statement:
-mult = mult || 2;
+Throw Error when function square() is called
+without arguments.
 
-Set default value of the mult parameter
-in the multiplyBy() function.
+Create new function and use it as default parameter.
 */
 
 "use strict";
 
-function multiplyBy(a, mult = 2) {
-  console.log(a * mult);
+function square(a) {
+  console.log(a * a);
 }
 
-multiplyBy(2);
-// 4
+square(10);
+// 100
 
-multiplyBy(2, undefined);
-// 4
-
-multiplyBy(2, 0);
-// 0
-
-multiplyBy(5, 10);
-// 50
+square();
+// BEFORE: NaN
+// AFTER: Uncaught Error: Function square requires
+// an argument!
