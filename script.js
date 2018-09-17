@@ -9,7 +9,8 @@ var a = [1, 2, 3];
 
 var b;
 
-//Copy array here
+// b = a.slice();
+b = [...a];
 
 b.push("newElement");
 
