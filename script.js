@@ -1,28 +1,36 @@
-/* CHALLENGE 13 - Template Literals
+/* CHALLENGE 14 - Object Destructuring
 
-Create carInfo() function that
-will return info about each car.
+Create shortPerson() function that will destructure each person object.
+Sample result:
+{n: "Mike", c: "Spain", a: 23, p: 100}
 
-Car is considered cheap if it's price is <= 20000
-Car is considered expensive it it's price is > 20000
+If input object doesn't have postsQuantity field
+it should get default value 0.
 */
 
 "use strict";
 
-var cars = [
-  { brand: "Honda", price: 13000 },
-  { brand: "Rolls-Royce", price: 120000 }
-];
+var person1 = {
+  name: "Mike",
+  info: {
+    country: "Spain",
+    age: 23
+  },
+  postsQuantity: 100
+};
 
-function carInfo(car) {
-  return `Price of my new ${car.brand} \
-is ${car.price}$ and it is \
-${car.price <= 20000 ? "cheap" : "expensive"} car.`;
-}
+var person2 = {
+  name: "Alice",
+  info: {
+    country: "Italy",
+    age: 25
+  }
+};
 
-cars.forEach(car => console.log(carInfo(car)));
-/* Price of my new Honda is 13000$
- and it is cheap car. */
+// Write function here
 
-/* Price of my new Rolls-Royce
- is 120000$ and it is expensive car. */
+console.log(shortPerson(person1));
+// {n: "Mike", c: "Spain", a: 23, p: 100}
+
+console.log(shortPerson(person2));
+// {n: "Alice", c: "Italy", a: 25, p: 0}
