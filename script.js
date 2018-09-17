@@ -1,25 +1,20 @@
-/* CHALLENGE 18 - Classes
+/* CHALLENGE 19 - Iterate over Object
 
-Rewrite code below using ES6 Classes
+Create a function sumObjectValues() that will sum all values
+of the fields that contain numbers.
+Ensure that iteration is done only over own properties of the object.
 */
 
 "use strict";
 
-class Fruit {
-  constructor(title, price) {
-    this.title = title;
-    this.price = price;
-  }
-  priceInfo() {
-    return `Price of one ${this.title} is \
-${this.price}$`;
-  }
-}
+var nums = {
+  a: 10,
+  b: 20,
+  c: "string",
+  d: 12
+};
 
-var apple = new Fruit("Apple", 2);
-console.log(apple.priceInfo());
-// Price of one Apple is 2$
+// Write code here
 
-var orange = new Fruit("Orange", 3);
-console.log(orange.priceInfo());
-// Price of one Orange is 3$
+console.log(sumObjectValues(nums));
+//42
