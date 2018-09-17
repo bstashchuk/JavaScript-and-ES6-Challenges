@@ -1,31 +1,20 @@
-/* CHALLENGE 19 - Iterate over Object
+/* CHALLENGE 20 - Sum positive and negative numbers
 
-Create a function sumObjectValues() that will sum all values
-of the fields that contain numbers.
-Ensure that iteration is done only over own properties of the object.
+Create a function sumPlusMinus() that takes array
+and sums separately positive and negative numbers.
+
+It should return an object like this:
+{
+  plus: 74, // sum of all positive numbers
+  minus: -54 // sum of all negative numbers
+}
 */
 
 "use strict";
 
-var nums = {
-  a: 10,
-  b: 20,
-  c: "string",
-  d: 12
-};
+var nums = [10, -12, 30, -1, -8, 0, 14, -33, 20];
 
-// Write code here
-function sumObjectValues(obj) {
-  let total = 0;
-  for (let k in obj) {
-    if (
-      typeof obj[k] === "number" &&
-      obj.hasOwnProperty(k)
-    )
-      total += obj[k];
-  }
-  return total;
-}
+// Write sumPlusMinus() function here
 
-console.log(sumObjectValues(nums));
-//42
+console.log(sumPlusMinus(nums));
+// {plus: 74, minus: -54}
