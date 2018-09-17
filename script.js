@@ -1,25 +1,18 @@
-/* CHALLENGE 8 - Check presence of the function parameters
+/* CHALLENGE 9 - Object Destructuring
 
-Throw Error when function square() is called
-without arguments.
-
-Create new function and use it as default parameter.
+Declare mult() function that will multiply values
+of the x, y, z fields of the passed object.
 */
 
 "use strict";
 
-function missingArg() {
-  throw new Error("Function square requires an argument!");
-}
+var obj = {
+  x: 5,
+  y: 20,
+  z: 3
+};
 
-function square(a = missingArg()) {
-  console.log(a * a);
-}
+// Write mult() function here
 
-square(10);
-// 100
-
-square();
-// BEFORE: NaN
-// AFTER: Uncaught Error: Function square requires
-// an argument!
+console.log(mult(obj));
+// 300
