@@ -1,25 +1,17 @@
-/* CHALLANGE 2 - Const
-Answer following Qustions:
-  1. Why no error is generated after the line 14?
-  2. Why after the line 19 TypeError is generated?
+/* CHALLENGE 3 - Let
 
-Change one line of code so, that error will go away.
-Don't change lines 14, 19.
+Change code to match output.
 */
 
 "use strict";
 
-var arr = [1, 2];
+var i = 10;
 
-arr.push(3);
+for (var i = 0; i < 5; i++) {
+  // some stuff
+  console.log(i);
+}
 
-console.log(arr);
-// [1, 2, 3]
-
-arr = [1, 2, 3, 4];
-// BEFORE: Uncaught TypeError:
-//   Assignment to constant variable.
-// AFTER: No error
-
-console.log(arr);
-// [1, 2, 3, 4]
+console.log(i);
+// BEFORE: 5
+// AFTER: 10
