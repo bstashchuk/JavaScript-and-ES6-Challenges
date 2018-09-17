@@ -1,17 +1,21 @@
-/* CHALLENGE 3 - Let
+/* CHALLENGE 4 - Hoisting
 
-Change code to match output.
+Change code to fix first error after the line 15.
+Error after the line 20 should still be generated.
 */
 
 "use strict";
 
-var i = 10;
+var a = 5,
+  b = 10;
 
-for (let i = 0; i < 5; i++) {
-  // some stuff
-  console.log(i);
+if (b > a) {
+  c = a + b + c;
+  let c = 2;
+  console.log(c);
+  // BEFORE: Uncaught ReferenceError: c is not defined
+  // AFTER: 17
 }
 
-console.log(i);
-// BEFORE: 5
-// AFTER: 10
+console.log(c);
+// Uncaught ReferenceError: c is not defined
