@@ -1,20 +1,16 @@
-/* CHALLENGE 5 - Ternary Operator
+/* CHALLENGE 6 - Arrow Functions
 
-Change contents of the isNumber function
-using ternary operator.
+Use arrow functions instead of functions
+where possible.
 */
 
 "use strict";
 
-function isNumber(a) {
-  return typeof a === "number" ? "That's number" : "That's not a number";
+function mult(a, b) {
+  return a * b;
 }
 
-console.log(isNumber(10));
-// That's number
-
-console.log(isNumber("Hey there"));
-// That's not a number
-
-console.log(isNumber(true));
-// That's not a number
+setTimeout(function() {
+  console.log(mult(5, 10));
+}, 1000);
+// 50
