@@ -1,20 +1,22 @@
-/* CHALLENGE 9 - Object Destructuring
+/* CHALLENGE 10 - Destructuring and Rest Operator
 
-Declare mult() function that will multiply values
-of the x, y, z fields of the passed object.
+Assign values to the a, b, c variables
+using destructuring and rest operator.
 */
 
 "use strict";
 
-var obj = {
-  x: 5,
-  y: 20,
-  z: 3
-};
+var a, b, c;
 
-function mult({ x, y, z }) {
-  return x * y * z;
-}
+var arr = [1, 2, 3, 4, 5, 6, 7];
 
-console.log(mult(obj));
-// 300
+// Write code here
+
+console.log(a);
+// 1
+
+console.log(b);
+// 2
+
+console.log(c);
+// [3, 4, 5, 6, 7]
