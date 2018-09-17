@@ -1,38 +1,24 @@
-/* CHALLENGE 17 - IIFE (Immediately Invoked Function Expression)
+/* CHALLENGE 18 - Classes
 
-Complete IIFE that will expose following methods:
-  greet() - It will take one argument and return greeting string
-  changeGreeting() - It will change greeting string
-
-Initial greeting string "Hey, that's" must be defined inside IIFE.
+Rewrite code below using ES6 Classes
 */
 
 "use strict";
 
-var greeting = (() => {
-  var greetingString = "Hey, that's";
+var Fruit = function(title, price) {
+  this.title = title;
+  this.price = price;
+};
 
-  function greet(name) {
-    return `${greetingString} ${name}`;
-  }
+Fruit.prototype.priceInfo = function() {
+  return `Price of one ${this.title} is \
+${this.price}$`;
+};
 
-  function changeGreeting(newGreeting) {
-    greetingString = newGreeting;
-  }
+var apple = new Fruit("Apple", 2);
+console.log(apple.priceInfo());
+// Price of one Apple is 2$
 
-  return {
-    greet,
-    changeGreeting
-  };
-})();
-
-console.log(greeting.greet("Bob"));
-// Hey, that's Bob
-
-console.log(
-  greeting.changeGreeting("Good Morning from")
-);
-// undefined
-
-console.log(greeting.greet("Emily"));
-// Good Morning from Emily
+var orange = new Fruit("Orange", 3);
+console.log(orange.priceInfo());
+// Price of one Orange is 3$
