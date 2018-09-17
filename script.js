@@ -1,18 +1,20 @@
-/* CHALLENGE 11 - Spread Operator
+/* CHALLENGE 12 - Copy Array
 
-Use Spread Operator to construct arr variable.
+Create copy of the a array.
 */
 
 "use strict";
 
-var a, b, c, d, arr;
+var a = [1, 2, 3];
 
-a = [1, 2];
-b = [4, 5];
-c = [8, 9, 10];
-d = 11;
+var b;
 
-arr = [0, ...a, 3, ...b, 6, 7, ...c, d];
+//Copy array here
 
-console.log(arr);
-// [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+b.push("newElement");
+
+console.log(a);
+// [1, 2, 3]
+
+console.log(b);
+// [1, 2, 3, "newElement"]
