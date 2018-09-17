@@ -1,24 +1,25 @@
-/*
-Create a function sum() that will sum all arguments passed to it.
-Quantity of the arguments is unknown.
+/* CHALLANGE 2 - Const
+Answer following Qustions:
+  1. Why no error is generated after the line 14?
+  2. Why after the line 19 TypeError is generated?
 
-Use console.log() at the end of the sum() function to print result.
-Use ES6 whenever possible.
+Change one line of code so, that error will go away.
+Don't change lines 14, 19.
 */
 
 "use strict";
 
-function sum(...args) {
-  var total;
-  total = args.reduce((acc, elem) => acc + elem, 0);
-  console.log(total);
-}
+const arr = [1, 2];
 
-sum(1, 3);
-//4
+arr.push(3);
 
-sum(10, 20, 5);
-//35
+console.log(arr);
+// [1, 2, 3]
 
-sum(2, 5, 80, 1, 10, 12);
-//110
+arr = [1, 2, 3, 4];
+// BEFORE: Uncaught TypeError:
+//   Assignment to constant variable.
+// AFTER: No error
+
+console.log(arr);
+// [1, 2, 3, 4]
