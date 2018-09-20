@@ -7,17 +7,17 @@ Step-by-step guide to clone and use repository:
 
 2. `cd JavaScript-and-ES6-Challenges`
 
-3. Each Challenge has two branches start and finish.
+3. Each Challenge has two branches **start** and **finish**.
 
-In order to start with specific challenge checkout corresponding start branch like
+In order to start with specific challenge checkout corresponding **start** branch like
 
 `git checkout CHALLENGE-1/sum-numbers/start`
 
-Solution for each challenge is available in the finish branches like
+Solution for each challenge is available in the **finish** branches like
 
 `git checkout CHALLENGE-1/sum-numbers/finish`
 
-4. Open directory in the favorite IDE. I suggest Visual Studio code or Atom
+4. Open directory in the favorite IDE. I suggest Visual Studio Code or Atom
 
 
 List of all challenges:
