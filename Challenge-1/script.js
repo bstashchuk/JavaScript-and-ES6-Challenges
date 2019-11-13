@@ -8,11 +8,11 @@ Use ES6 whenever possible.
 
 "use strict";
 
-const sum = ((...restArgs) => {
+const sum = ((...args) => {
 	let sum = 0;
 
-	for (let i=0; i<restArgs.length; i++) {
-		sum += arr[i];
+	for (let i=0; i<args.length; i++) {
+		sum += args[i];
 	}
 
 	console.log(sum);
