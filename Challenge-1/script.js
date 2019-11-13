@@ -8,10 +8,14 @@ Use ES6 whenever possible.
 
 "use strict";
 
-// Write code here
+const sum = ((...restArgs) => {
+	let sum = 0;
 
-const sum = ((numbers) => {
-	console.log(numbers)
+	for (let i=0; i<restArgs.length; i++) {
+		sum += arr[i];
+	}
+
+	console.log(sum);
 })
 
 sum(1, 3);
