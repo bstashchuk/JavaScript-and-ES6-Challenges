@@ -10,6 +10,10 @@ Use ES6 whenever possible.
 
 // Write code here
 
+const sum = ((numbers) => {
+	console.log(numbers)
+})
+
 sum(1, 3);
 //4
 
