@@ -9,7 +9,7 @@ Don't change lines 14, 19.
 
 "use strict";
 
-const arr = [1, 2];
+let arr = [1, 2];
 
 arr.push(3);
 
@@ -17,6 +17,8 @@ console.log(arr);
 // [1, 2, 3]
 
 arr = [1, 2, 3, 4];
+// Not allowed to reassign a constant variable
+
 // BEFORE: Uncaught TypeError:
 //   Assignment to constant variable.
 // AFTER: No error
