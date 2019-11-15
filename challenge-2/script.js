@@ -7,7 +7,7 @@ Change one line of code so, that error will go away.
 Don't change lines 14, 19.
 */
 
-"use strict";
+'use strict';
 
 let arr = [1, 2];
 
