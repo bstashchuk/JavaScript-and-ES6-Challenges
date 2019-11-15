@@ -3,11 +3,11 @@
 Change code to match output.
 */
 
-"use strict";
+'use strict';
 
-var i = 10;
+let i = 10;
 
-for (var i = 0; i < 5; i++) {
+for (let i = 0; i < 10; i++) {
   // some stuff
   console.log(i);
 }

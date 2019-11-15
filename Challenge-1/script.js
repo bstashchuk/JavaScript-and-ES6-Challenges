@@ -6,7 +6,7 @@ Use console.log() at the end of the sum() function to print result.
 Use ES6 whenever possible.
 */
 
-"use strict";
+'use strict';
 
 const sum = ((...args) => {
 	let sum = 0;
