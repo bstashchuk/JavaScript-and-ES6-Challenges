@@ -1,4 +1,4 @@
-# JavaScript-and-ES6-Challenges
+# Amazing JavaScript-and-ES6-Challenges
 
 
 Step-by-step guide to clone and use repository:
